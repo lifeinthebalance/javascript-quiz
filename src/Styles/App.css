@@ -1,0 +1,40 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@keyframes correct {
+  from {
+    border-radius: 50px;
+  }
+  to {
+    border-radius: initial;
+  }
+}
+
+span {
+  cursor: pointer;
+}
+
+p {
+  cursor: default;
+}
+
+.quitButton {
+  color: red;
+  margin: 0 auto;
+}
+
+/* .main {
+  display: flex;
+  flex-direction: column;
+} */
