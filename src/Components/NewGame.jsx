@@ -11,12 +11,21 @@ NewGame.propTypes = {
 
 export default function NewGame({ setTime, questions, setQuestions, time }) {
   const questionTypes = (
-    <p onClick={(e) => startNewGame(e)}>
-      <span>Math</span> <span>String</span> <span>Array</span> <span>Any</span>
-    </p>
+    <ul>
+      <li onClick={(e) => startNewGame(e)}>Math</li>
+      <li onClick={(e) => startNewGame(e)}>String</li>
+      <li onClick={(e) => startNewGame(e)}>Array</li>
+      <li onClick={(e) => startNewGame(e)}>Any</li>
+    </ul>
   );
 
   function startNewGame(e) {
+    // const easyMode = () => {
+    //   const option = document.createElement("p");
+    //   easyMode.textContent = "easy";
+    //   document.append(option);
+    // };
+
     if (e.target.textContent === "Any") {
       setQuestions(arrayShuffle(initQuestions));
       setTime(180);

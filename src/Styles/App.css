@@ -21,7 +21,7 @@ body {
   }
 }
 
-span {
+li {
   cursor: pointer;
 }
 
@@ -38,3 +38,10 @@ p {
   display: flex;
   flex-direction: column;
 } */
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 3px;
+  padding: 0;
+}
